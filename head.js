@@ -1,4 +1,7 @@
 // FUNCTION IMPLEMENTATION
+
+var head = require('lodash.head');
+
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed:  ${actual}  === ${expected}`);
@@ -8,9 +11,8 @@ const assertEqual = function(actual, expected) {
   
 };
 
-const head = function(assertEqual) {
-  console.log(assertEqual[0]);
-};
+
+
 // TEST CODE
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
