@@ -1,6 +1,6 @@
 // FUNCTION IMPLEMENTATION
 
-var head = require('lodash.head');
+let head = require('lodash.head');
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
