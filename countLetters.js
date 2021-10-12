@@ -11,7 +11,8 @@ const countLetters = function(string){
   const count = {};
   for (let letter of string.split('')) {
     count[letter] = 0;
-  } for (let a in count) {
+  }
+  for (let a in count) {
     for (let b of string.split('')) {
       if (a === b) {
         count[a]++;
@@ -20,7 +21,6 @@ const countLetters = function(string){
   }
   return count;
 }
+module.exports = countLetters;
 
-//Test
-console.log(countLetters('LHL'));
 

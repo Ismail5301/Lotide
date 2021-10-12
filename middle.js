@@ -1,3 +1,5 @@
+const assertEqual = require('./assertEqual')
+
 const middle = function(newArr) {
   if (newArr.length <= 2) {  //Check to see if Array length has more than 2 elements
     return [];

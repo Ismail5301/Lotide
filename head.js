@@ -1,16 +1,11 @@
 // FUNCTION IMPLEMENTATION
+const assertEqual = require('./assertEqual');
 
-let head = require('lodash.head');
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed:  ${actual}  === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed:  ${actual}  !==   ${expected}`);
-  }
-  
+const head = function(arr) {
+  return arr.shift();
 };
 
+module.exports = head;
 
 
 // TEST CODE
@@ -18,8 +13,8 @@ assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 assertEqual(23, 45);
 assertEqual("new", "new");
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+assertEqual(([5,6,7]), 5);
+assertEqual((["Hello", "Lighthouse", "Labs"]), "Hello");
 
 
 
